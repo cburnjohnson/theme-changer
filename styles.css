@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -59,20 +61,30 @@ body.reddit-theme {
 
 .title {
     margin: 0;
-    margin-bottom: 0.5rem;
+    font-size: 4rem;
+    font-family: 'Concert One', cursive;
+}
+
+.button-container {
+    margin-top: 2rem;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 1rem;
+    justify-content: center;
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
-    padding: 0.5em 1em;
+    font-family: 'Concert One', cursive;
+    font-size: 1.25rem;
+    padding: 0.5em 1.5em;
     border-radius: 0.3em;
     border: none;
     outline: none;
     transition: var(--transition-delay);
     transform: scale(1);
+    text-align: center;
 }
 
 .button.sun-button {
@@ -107,7 +119,7 @@ body.reddit-theme {
 
 .button:hover,
 :focus {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .icon-container {
@@ -129,8 +141,8 @@ body.reddit-theme {
     position: absolute;
     top: 5%;
     transition: opacity, fill, var(--transition-delay);
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     fill: var(--accent-color);
 }
 
