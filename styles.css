@@ -100,7 +100,8 @@ body.twitter-theme {
 
 .sun,
 .moon,
-.ocean {
+.ocean,
+.twitter {
     position: absolute;
     top: 5%;
     transition: opacity, fill, var(--transition-delay);
@@ -109,7 +110,10 @@ body.twitter-theme {
     fill: var(--accent-color);
 }
 
-.sun {
+.sun,
+.moon,
+.ocean,
+.twitter {
     opacity: 0;
 }
 
@@ -121,18 +125,14 @@ body.twitter-theme {
     opacity: 0;
 }
 
-.moon {
-    opacity: 0;
-}
-
 .moon-theme .moon {
     opacity: 1;
 }
 
-.ocean {
-    opacity: 0;
+.ocean-theme .ocean {
+    opacity: 1;
 }
 
-.ocean-theme .ocean {
+.twitter-theme .twitter {
     opacity: 1;
 }
