@@ -33,6 +33,12 @@ body.moon-theme {
     --text-color: white;
 }
 
+body.ocean-theme {
+    --accent-color: #1da2d8;
+    --background-color: #064273;
+    --text-color: white;
+}
+
 .title {
     margin: 0;
     margin-bottom: 0.5rem;
@@ -57,7 +63,12 @@ body.moon-theme {
 }
 
 .button.moon-button {
-    background-color: #333;
+    background-color: #d0d066;
+    color: white;
+}
+
+.button.ocean-button {
+    background-color: #1da2d8;
     color: white;
 }
 
@@ -70,7 +81,7 @@ body.moon-theme {
     transform: scale(1.1);
 }
 
-.sun-moon-container {
+.icon-container {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -81,7 +92,8 @@ body.moon-theme {
 }
 
 .sun,
-.moon {
+.moon,
+.ocean {
     position: absolute;
     top: 5%;
     transition: opacity, fill, var(--transition-delay);
@@ -91,6 +103,10 @@ body.moon-theme {
 }
 
 .sun {
+    opacity: 0;
+}
+
+.sun-theme .sun {
     opacity: 1;
 }
 
@@ -103,5 +119,13 @@ body.moon-theme {
 }
 
 .moon-theme .moon {
+    opacity: 1;
+}
+
+.ocean {
+    opacity: 0;
+}
+
+.ocean-theme .ocean {
     opacity: 1;
 }
