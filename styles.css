@@ -45,6 +45,12 @@ body.twitter-theme {
     --text-color: white;
 }
 
+body.twitch-theme {
+    --accent-color: #9147ff;
+    --background-color: #0e0e10;
+    --text-color: white;
+}
+
 .title {
     margin: 0;
     margin-bottom: 0.5rem;
@@ -83,6 +89,11 @@ body.twitter-theme {
     color: white;
 }
 
+.button.twitch-button {
+    background-color: #9147ff;
+    color: white;
+}
+
 .button:hover,
 :focus {
     transform: scale(1.1);
@@ -101,7 +112,8 @@ body.twitter-theme {
 .sun,
 .moon,
 .ocean,
-.twitter {
+.twitter,
+.twitch {
     position: absolute;
     top: 5%;
     transition: opacity, fill, var(--transition-delay);
@@ -113,7 +125,8 @@ body.twitter-theme {
 .sun,
 .moon,
 .ocean,
-.twitter {
+.twitter,
+.twitch {
     opacity: 0;
 }
 
@@ -134,5 +147,9 @@ body.twitter-theme {
 }
 
 .twitter-theme .twitter {
+    opacity: 1;
+}
+
+.twitch-theme .twitch {
     opacity: 1;
 }

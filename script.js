@@ -12,6 +12,9 @@ document.querySelector('.sun-button').addEventListener('click', () => {
         case 'twitter-theme':
             bodyClass.remove('twitter-theme');
             break;
+        case 'twitch-theme':
+            bodyClass.remove('twitch-theme');
+            break;
         default:
             break;
     }
@@ -29,6 +32,9 @@ document.querySelector('.moon-button').addEventListener('click', () => {
             break;
         case 'twitter-theme':
             bodyClass.remove('twitter-theme');
+            break;
+        case 'twitch-theme':
+            bodyClass.remove('twitch-theme');
             break;
         default:
             break;
@@ -48,6 +54,9 @@ document.querySelector('.ocean-button').addEventListener('click', () => {
         case 'twitter-theme':
             bodyClass.remove('twitter-theme');
             break;
+        case 'twitch-theme':
+            bodyClass.remove('twitch-theme');
+            break;
         default:
             break;
     }
@@ -66,8 +75,32 @@ document.querySelector('.twitter-button').addEventListener('click', () => {
         case 'ocean-theme':
             bodyClass.remove('ocean-theme');
             break;
+        case 'twitch-theme':
+            bodyClass.remove('twitch-theme');
+            break;
         default:
             break;
     }
     document.body.classList.add('twitter-theme');
+});
+
+// Twitch Button Event Listener
+document.querySelector('.twitch-button').addEventListener('click', () => {
+    switch (bodyClass[0]) {
+        case 'sun-theme':
+            bodyClass.remove('sun-theme');
+            break;
+        case 'moon-theme':
+            bodyClass.remove('moon-theme');
+            break;
+        case 'ocean-theme':
+            bodyClass.remove('ocean-theme');
+            break;
+        case 'twitter-theme':
+            bodyClass.remove('twitter-theme');
+            break;
+        default:
+            break;
+    }
+    document.body.classList.add('twitch-theme');
 });
