@@ -34,8 +34,14 @@ body.moon-theme {
 }
 
 body.ocean-theme {
-    --accent-color: #1da2d8;
+    --accent-color: #7fcdff;
     --background-color: #064273;
+    --text-color: white;
+}
+
+body.twitter-theme {
+    --accent-color: #1da1f2;
+    --background-color: #15202b;
     --text-color: white;
 }
 
@@ -68,12 +74,13 @@ body.ocean-theme {
 }
 
 .button.ocean-button {
-    background-color: #1da2d8;
+    background-color: #7fcdff;
     color: white;
 }
 
-.theme-toggle-button .icon {
-    margin-right: 0.5em;
+.button.twitter-button {
+    background-color: #1da1f2;
+    color: white;
 }
 
 .button:hover,
